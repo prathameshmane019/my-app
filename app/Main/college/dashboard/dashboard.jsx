@@ -3,6 +3,7 @@ import React from 'react'
 const Dashboard = () => {
   return (
     <div>
+    <div>This is university Dashboard</div>
                 <div class="h-full w-64 border-r pt-10 px-5">
                 <p class="text-xs font-medium text-gray-400">MAIN</p>
                               <div
