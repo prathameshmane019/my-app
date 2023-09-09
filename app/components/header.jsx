@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <div className="navbar bg-violet-800">
       <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-xl">Name/Logo</a>
+        <a className="btn btn-ghost normal-case text-xl">ProjectsHub</a>
       </div>
       <div className="flex-none">
         <div className="dropdown dropdown-end">
