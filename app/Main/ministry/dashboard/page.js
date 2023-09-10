@@ -1,4 +1,5 @@
-import Dashboard from "./dashboard";
+
 export default function DashboardPage() {
-  return <Dashboard />;
+  return (<div>this is ministry Dashboard</div>
+  );
 }
