@@ -2,9 +2,7 @@ import React from 'react'
 
 const Dashboard = () => {
   return (
-
-    <div>This is university Dashboard</div>
-
+    <div>This is college Dashboard</div>
   )
 }
 
