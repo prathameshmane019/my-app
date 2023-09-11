@@ -13,8 +13,7 @@ const Header = () => {
         <a className="btn btn-ghost normal-case text-xl">ProjectHub</a>
       </div>
       <div className="flex-none">
-        <div  className="">
-        <Link href="/pages/about"> About </Link>
+        <div  className="" onClick={()=>navigate("/about")}>About
         </div>
         <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
@@ -26,7 +25,7 @@ const Header = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <li onClick={()=>navigate("Main/ministry") }>
+            <li onClick={()=>navigate("/ministry") }>
               <a className="justify-between">
                 Ministry Login
                  </a>

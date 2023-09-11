@@ -4,6 +4,8 @@ import CLogin from './c-login'
 const inter = Inter({ subsets: ['latin'] })
 export default function CollegeLayout({ children }) {
     return (
-      <CLogin/>
+      <div>
+      {children}
+      </div>
     )
   }
