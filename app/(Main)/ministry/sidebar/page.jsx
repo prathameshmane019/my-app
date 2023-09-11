@@ -1,8 +1,6 @@
 export default function MinistrySideBar() {
   return (
     <div className="h-full w-64 border-r pt-10 px-5">
-      <p className="text-xs font-medium text-gray-400">MAIN</p>
-
       <div className="mt-4 py-1.5 text-sm font-medium text-slate-500 hover:text-blue-500 group cursor-pointer flex items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +52,7 @@ export default function MinistrySideBar() {
             d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
           />
         </svg>
-        Projects
+        Projects Gallery
       </div>
 
       <div className="mt-4 py-1.5 text-sm font-medium text-slate-500 hover:text-blue-500 group cursor-pointer flex items-center">
@@ -75,6 +73,9 @@ export default function MinistrySideBar() {
 
         Add University
     </div>
-    </div>
+
+        
+      </div>
+
   );
 }
