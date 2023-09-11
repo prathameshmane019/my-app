@@ -1,4 +1,5 @@
-'use client'
+"use client";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 const Header = () => {
   const router = useRouter();
@@ -9,25 +10,10 @@ const Header = () => {
   return (
     <div className="navbar bg-violet-800">
       <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+        <a className="btn btn-ghost normal-case text-xl">ProjectHub</a>
       </div>
       <div className="flex-none">
-        <div className="dropdown dropdown-end">
-          <label tabIndex={0} className="btn btn-ghost btn-circle">
-            <button onClick={() => navigate("pages/about")}>About</button>
-          </label>
-          <div
-            tabIndex={0}
-            className="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow"
-          >
-            <div className="card-body">
-              <span className="font-bold text-lg">8 Items</span>
-              <span className="text-info">Subtotal: $999</span>
-              <div className="card-actions">
-                <button className="btn btn-primary btn-block">View cart</button>
-              </div>
-            </div>
-          </div>
+        <div  className="" onClick={()=>navigate("/about")}>About
         </div>
         <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
@@ -39,17 +25,16 @@ const Header = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <li>
+            <li onClick={()=>navigate("/ministry") }>
               <a className="justify-between">
-                Profile
-                <span className="badge">New</span>
-              </a>
+                Ministry Login
+                 </a>
             </li>
             <li>
-              <a>Settings</a>
+              <a>University Login</a>
             </li>
             <li>
-              <a>Logout</a>
+              <a>College Login</a>
             </li>
           </ul>
         </div>
