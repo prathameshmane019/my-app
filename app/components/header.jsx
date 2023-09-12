@@ -1,7 +1,8 @@
 "use client";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { MdAccountCircle } from "react-icons/md";
+
+import Image from "next/image";
+
 const Header = () => {
   const router = useRouter();
 
@@ -24,8 +25,13 @@ const Header = () => {
         </div>
         <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-            <div className="max-w-fit rounded-full">
-              <MdAccountCircle />
+            <div className="w-10 rounded-full">
+              <Image
+                src="/img/user1.jpg"
+                width={50}
+                height={50}
+                alt="Picture of the author"
+              />
             </div>
           </label>
           <ul
