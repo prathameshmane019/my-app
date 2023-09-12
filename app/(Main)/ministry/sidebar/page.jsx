@@ -1,9 +1,13 @@
+
 'use client'
+
 import { useRouter } from "next/navigation";
 export default function MinistrySideBar() {
   const router = useRouter();
   const navigate = (name) => {
-    router.replace("/ministry/"+name);
+
+    router.push("/ministry/"+name);
+
   };
   return (
     <div className="h-full w-64 border-r pt-10 px-5">
@@ -28,7 +32,9 @@ export default function MinistrySideBar() {
         Dashboard
       </div>
 
+
       <div className="mt-4 py-1.5 text-sm font-medium text-slate-500 hover:text-blue-500 group cursor-pointer flex items-center" onClick={() => navigate("/projects")} >
+
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 stroke-slate-400 mr-4 group-hover:stroke-blue-500"
@@ -46,7 +52,9 @@ export default function MinistrySideBar() {
         Projects Gallery
       </div>
 
+
       <div className="mt-4 py-1.5 text-sm font-medium text-slate-500 hover:text-blue-500 group cursor-pointer flex items-center" onClick={()=>navigate("/adduniversity")}>
+
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 stroke-slate-400 mr-4 group-hover:stroke-blue-500"
