@@ -21,10 +21,12 @@ const Header = () => {
         <div className="dropdown dropdown-end mx-3">
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
             <div className="w-10 rounded-full">
-
-              <Image src="/img/user1.jpg"
-              width={50} height={50} alt="Picture of the author" />
-
+              <Image
+                height={50}
+                width={50}
+                src="/img/user1.jpg"
+                alt="profile image"
+              />
             </div>
           </label>
           <ul
