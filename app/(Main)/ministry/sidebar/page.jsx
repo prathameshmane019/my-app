@@ -1,15 +1,19 @@
-"use client"
+"use client";
+
 import { useRouter } from "next/navigation";
 export default function MinistrySideBar() {
   const router = useRouter();
   const navigate = (name) => {
-    router.push("/ministry/"+name);
+    router.push("/ministry/" + name);
   };
   return (
     <div className="h-full w-64 border-r pt-10 px-5">
       <p className="text-xs font-medium text-gray-400">MAIN</p>
 
-      <div className="mt-4 py-1.5 text-sm font-medium text-slate-500 hover:text-blue-500 group cursor-pointer flex items-center" onClick={()=>navigate("/dashboard")}>
+      <div
+        className="mt-4 py-1.5 text-sm font-medium text-slate-500 hover:text-blue-500 group cursor-pointer flex items-center"
+        onClick={() => navigate("/dashboard")}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 stroke-slate-400 mr-4 group-hover:stroke-blue-500"
@@ -27,8 +31,10 @@ export default function MinistrySideBar() {
         Dashboard
       </div>
 
-     
-      <div className="mt-4 py-1.5 text-sm font-medium text-slate-500 hover:text-blue-500 group cursor-pointer flex items-center" onClick={()=>navigate("/projects")} >
+      <div
+        className="mt-4 py-1.5 text-sm font-medium text-slate-500 hover:text-blue-500 group cursor-pointer flex items-center"
+        onClick={() => navigate("/projects")}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 stroke-slate-400 mr-4 group-hover:stroke-blue-500"
@@ -46,7 +52,10 @@ export default function MinistrySideBar() {
         Projects Gallery
       </div>
 
-      <div className="mt-4 py-1.5 text-sm font-medium text-slate-500 hover:text-blue-500 group cursor-pointer flex items-center" onClick={()=>navigate("/adduniversity")} >
+      <div
+        className="mt-4 py-1.5 text-sm font-medium text-slate-500 hover:text-blue-500 group cursor-pointer flex items-center"
+        onClick={() => navigate("/adduniversity")}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 stroke-slate-400 mr-4 group-hover:stroke-blue-500"
@@ -61,12 +70,8 @@ export default function MinistrySideBar() {
             d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
           />
         </svg>
-
         Add University
-    </div>
-
-        
       </div>
-
+    </div>
   );
 }
