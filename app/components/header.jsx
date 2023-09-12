@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 const Header = () => {
   const router = useRouter();
@@ -15,10 +15,10 @@ const Header = () => {
       <div className="flex-none">
         <div  className="" onClick={()=>navigate("/about")}>About
         </div>
-        <div className="dropdown dropdown-end">
+        <div className="dropdown dropdown-end mx-3">
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
             <div className="w-10 rounded-full">
-              <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+              <Image height={50} width={50} src="/img/user1.jpg" />
             </div>
           </label>
           <ul
