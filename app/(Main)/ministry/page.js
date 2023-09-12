@@ -1,9 +1,3 @@
-
-
 export default function MinistryPage() {
-    return (
-      
-        <div>This is ministry </div> 
-    )
-  }
-  
+  return <div>This is ministry </div>;
+}
