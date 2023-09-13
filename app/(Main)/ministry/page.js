@@ -1,11 +1,8 @@
-import React from 'react'
+import React from "react";
+import DashboardPage from "./dashboard/page";
 
 const Ministry = () => {
-  return (
-    <div>
-      this is ministy page
-    </div>
-  )
-}
+  return <DashboardPage />;
+};
 
-export default Ministry
+export default Ministry;

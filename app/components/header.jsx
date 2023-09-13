@@ -1,6 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+
 import Image from "next/image";
 
 const Header = () => {
@@ -10,9 +11,14 @@ const Header = () => {
     router.push(name);
   };
   return (
-    <div className="navbar bg-violet-800">
+    <div className="navbar sticky bg-violet-800">
       <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-xl">ProjectHub</a>
+        <div
+          className="btn btn-ghost normal-case text-xl"
+          onClick={() => navigate("/")}
+        >
+          ProjectHub
+        </div>
       </div>
       <div className="flex-none">
         <div className="" onClick={() => navigate("/about")}>
@@ -26,6 +32,7 @@ const Header = () => {
                 width={50}
                 src="/img/user1.jpg"
                 alt="profile image"
+
               />
             </div>
           </label>
