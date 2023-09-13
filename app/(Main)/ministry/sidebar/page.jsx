@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 export default function MinistrySideBar() {
   const router = useRouter();
   const navigate = (name) => {
-    router.replace("/ministry/" + name);
+    router.push("/ministry/" + name);
   };
   return (
     <div className="sticky top-12 flex flex-col gap-2 p-2 border rounded-xl">
