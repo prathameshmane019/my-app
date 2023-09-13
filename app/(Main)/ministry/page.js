@@ -3,7 +3,7 @@ import React from 'react'
 const Ministry = () => {
   return (
     <div>
-      this is ministy page
+      this is Ministy Page
     </div>
   )
 }
