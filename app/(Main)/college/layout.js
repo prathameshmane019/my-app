@@ -1,9 +1,8 @@
-import { Inter } from 'next/font/google'
-import CLogin from './c-login'
+import { SessionProvider } from "next-auth/react"
 
-const inter = Inter({ subsets: ['latin'] })
 export default function CollegeLayout({ children }) {
     return (
+
       <div>
       {children}
       </div>
