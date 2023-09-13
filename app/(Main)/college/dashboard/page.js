@@ -1,6 +1,6 @@
 import Dashboard from "./dashboard";
 export default function DashboardPage() {
-  return (<>
-  <Dashboard />
-  </>);
+  return (
+    <div>this is college dashboard</div>
+  );
 }

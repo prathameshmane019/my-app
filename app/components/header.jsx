@@ -1,6 +1,8 @@
 "use client";
-import Link from "next/link";
+
 import { useRouter } from "next/navigation";
+import Image from "next/image";
+
 const Header = () => {
   const router = useRouter();
 
@@ -13,23 +15,26 @@ const Header = () => {
         <a className="btn btn-ghost normal-case text-xl">ProjectHub</a>
       </div>
       <div className="flex-none">
-        <div  className="">
-        <Link href="/pages/about"> About </Link>
+        <div className="" onClick={() => navigate("/about")}>
+          About
         </div>
-        <div className="dropdown dropdown-end">
+        <div className="dropdown dropdown-end mx-3">
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
             <div className="w-10 rounded-full">
-              <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+              <Image
+                height={50}
+                width={50}
+                src="/img/user1.jpg"
+                alt="profile image"
+              />
             </div>
           </label>
           <ul
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <li onClick={()=>navigate("Main/ministry") }>
-              <a className="justify-between">
-                Ministry Login
-                 </a>
+            <li onClick={() => navigate("/ministry")}>
+              <a className="justify-between">Ministry Login</a>
             </li>
             <li>
               <a>University Login</a>
