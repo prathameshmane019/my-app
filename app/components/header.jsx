@@ -10,7 +10,7 @@ const Header = () => {
     router.push(name);
   };
   return (
-    <div className="navbar bg-violet-800">
+    <div className="navbar sticky bg-violet-800">
       <div className="flex-1">
         <div
           className="btn btn-ghost normal-case text-xl"

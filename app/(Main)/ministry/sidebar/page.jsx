@@ -6,7 +6,7 @@ export default function MinistrySideBar() {
     router.replace("/ministry/" + name);
   };
   return (
-    <div className="h-full w-64 border-r pt-10 px-5">
+    <div className="sticky top-12 flex flex-col gap-2 p-2 border rounded-xl">
       <p className="text-xs font-medium text-gray-400">MAIN</p>
 
       <div
