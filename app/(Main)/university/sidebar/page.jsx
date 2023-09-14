@@ -1,9 +1,9 @@
 "use client";
 import { useRouter } from "next/navigation";
-export default function MinistrySideBar() {
+export default function UniversitySideBar() {
   const router = useRouter();
   const navigate = (name) => {
-    router.push("/ministry/" + name);
+    router.push("/university/" + name);
   };
   return (
     <div className="top-12 flex flex-col gap-2 p-2 border rounded-xl">
@@ -53,7 +53,7 @@ export default function MinistrySideBar() {
 
       <div
         className="mt-4 py-1.5 text-sm font-medium text-slate-500 hover:text-blue-500 group cursor-pointer flex items-center"
-        onClick={() => navigate("/adduniversity")}
+        onClick={() => navigate("/addcollege")}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +69,7 @@ export default function MinistrySideBar() {
             d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
           />
         </svg>
-        Add University
+        Add College
       </div>
     </div>
   );
