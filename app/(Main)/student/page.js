@@ -1,8 +1,8 @@
 import React from "react";
 import DashboardPage from "./dashboard/page";
 
-const Ministry = () => {
+const Student = () => {
   return <DashboardPage />;
 };
 
-export default Ministry;
+export default Student;
