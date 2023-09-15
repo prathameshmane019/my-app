@@ -4,9 +4,7 @@ import DashboardPage from "../../college/dashboard/page";
 const College = () => {
   return (
 
-    
-
-    
+  
     <div>
        This is college dashboard
     </div>
