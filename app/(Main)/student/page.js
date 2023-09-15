@@ -6,7 +6,7 @@ const Student = () => {
   const router = useRouter();
 
   const navigate = (name) => {
-    router.push("/student/features" + name);
+    router.push("/student/" + name);
   };
   return (
     <>
@@ -64,28 +64,28 @@ const Student = () => {
             </div>
 
             <div>
-            <button
-        className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-        
-        onClick={() => navigate("/dashboard")}
-      >
-        Login
-      </button>
+              <button
+                className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                onClick={() => navigate("features/dashboard")}
+              >
+                Login
+              </button>
+              <p className="mt-10 text-center text-sm text-gray-500">
+                You have Register? {' '}
+                <Link href="/register" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
+                  Register Now
+                </Link>
+              </p>
             </div>
           </form>
 
-          <p className="mt-10 text-center text-sm text-gray-500">
-           You have Register? {' '}
-            <Link href="#" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
-              Register Now
-            </Link>
-          </p>
+
         </div>
       </div>
-      
-       
-     
-      
+
+
+
+
     </>
   );
 };
