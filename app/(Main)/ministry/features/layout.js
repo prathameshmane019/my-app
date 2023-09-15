@@ -1,5 +1,4 @@
 import MinistrySideBar from "./sidebar/page";
-import "./ministry.css";
 
 export default function MainLayout({ children }) {
   return (

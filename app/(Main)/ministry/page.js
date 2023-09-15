@@ -1,21 +1,25 @@
-import React from 'react'
 
-const page = () => {
+"use client";
+import { useRouter } from "next/navigation";
+import React from "react";
+
+const Ministry = () => {
+  const router = useRouter();
+
+  const navigate = (name) => {
+    router.push("/ministry/features" + name);
+  };
   return (
-    <div>
-       <form action="/login" method="post" class="mt-5 w-50 container"> 
-        <div class="mb-3">
-          <label class="form-label">Email</label>
-          <input name="email" type="email" class="form-control" />
-        </div>
-        <div class="mb-3">
-          <label class="form-label">Password</label>
-          <input name="password" type="password" class="form-control" />
-        </div>
-        <button type="submit" class="btn btn-primary">Login</button>
-    </form>
-    </div>
-  )
-}
+    <>
+      <h1>This is minifddfstry login page</h1>
+      <button
+        className="btn btn-primary"
+        onClick={() => navigate("/dashboard")}
+      >
+        Primary
+      </button>
+    </>
+  );
+};
 
 export default page;
