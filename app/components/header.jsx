@@ -11,13 +11,20 @@ const Header = () => {
     router.push(name);
   };
   return (
-    <div className="navbar sticky bg-violet-800">
+    <div className="navbar sticky bg-pink-100">
       <div className="flex-1">
+         
         <div
           className="btn btn-ghost normal-case text-xl"
           onClick={() => navigate("/")}
         >
-          ProjectHub
+          
+          <img
+            className="mx-auto h-10 w-auto"
+            src="C:\Users\deshm\OneDrive\Pictures\Screenshots\Abhiyantrika.png"
+            
+          />
+          Abhiyantrika
         </div>
       </div>
       <div className="flex-none">
@@ -39,7 +46,7 @@ const Header = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <li onClick={() => navigate("/ministry/login")}>
+            <li onClick={() => navigate("/ministry")}>
               <a className="justify-between">Ministry Login</a>
             </li>
             <li onClick={() => navigate("/university")}>
