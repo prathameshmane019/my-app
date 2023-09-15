@@ -11,7 +11,7 @@ export default function CollegeSideBar() {
 
       <div
         className="mt-4 py-1.5 text-sm font-medium text-slate-500 hover:text-blue-500 group cursor-pointer flex items-center"
-        onClick={() => navigate("/dashboard")}
+        onClick={() => navigate("features/dashboard")}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +32,7 @@ export default function CollegeSideBar() {
 
       <div
         className="mt-4 py-1.5 text-sm font-medium text-slate-500 hover:text-blue-500 group cursor-pointer flex items-center"
-        onClick={() => navigate("/projects")}
+        onClick={() => navigate("features/projects")}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +53,7 @@ export default function CollegeSideBar() {
 
       <div
         className="mt-4 py-1.5 text-sm font-medium text-slate-500 hover:text-blue-500 group cursor-pointer flex items-center"
-        onClick={() => navigate("/addproject")}
+        onClick={() => navigate("features/addproject")}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

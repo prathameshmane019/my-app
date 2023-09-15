@@ -21,4 +21,4 @@ const Ministry = () => {
   );
 };
 
-export default page;
+export default Ministry;
