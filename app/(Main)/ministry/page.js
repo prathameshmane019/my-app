@@ -1,10 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
 import React from "react";
-<<<<<<< HEAD
-import DashboardPage from "./login/dashboard/page";
-=======
->>>>>>> a1f542501fbc9c2f465b86c1691b8790f5a2e2d7
 
 const Ministry = () => {
   const router = useRouter();
