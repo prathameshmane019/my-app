@@ -1,5 +1,5 @@
 import React from "react";
-import DashboardPage from "./dashboard/page";
+import DashboardPage from "./login/dashboard/page";
 
 const Ministry = () => {
   return <DashboardPage />;

@@ -1,17 +1,17 @@
 import React from "react";
 import DashboardPage from "../../college/dashboard/page";
 
-const College = () => {
+const Ministry= () => {
   return (
 
     
 
     
     <div>
-       This is college dashboard
+       This is Ministry dashboard
     </div>
   )
 
 }
 
-export default College;
+export default Ministry;
