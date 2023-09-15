@@ -15,7 +15,7 @@ const College = () => {
           <img
             className="mx-auto h-20 w-auto"
             src=""
-            alt="Your Company"
+            alt=""
           />
           <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
             Login to your account
@@ -75,7 +75,7 @@ const College = () => {
           </form>
 
           <p className="mt-10 text-center text-sm text-gray-500">
-            {' '}
+           <u>Login</u>|{' '}
             <a href="#" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
               
             </a>
