@@ -10,14 +10,14 @@ const Student = () => {
   };
   return (
     <>
-      <h1>This is student login page</h1>
+      <h1>This is student registration page</h1>
       <button
         className="btn btn-primary"
         onClick={() => navigate("features/dashboard")}
       >
         Login
       </button>
-      <button className="btn btn-primary" onClick={() => navigate("/register")}>
+      <button className="btn btn-primary" onClick={() => navigate("/")}>
         Register
       </button>
     </>
