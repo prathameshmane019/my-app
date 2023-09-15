@@ -17,6 +17,7 @@ const Student = () => {
 
   return (
     <>
+
     
    <form className="w-full max-w-5xl ml-20 my-14">
     <div className="flex flex-wrap -mx-3 mb-6">
@@ -160,6 +161,7 @@ const Student = () => {
       >
         Login
       </button>
+
       <button className="btn btn-primary" onClick={() => navigate("/")}>
         Register
       </button>

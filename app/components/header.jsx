@@ -11,18 +11,22 @@ const Header = () => {
     router.push(name);
   };
   return (
-    <div className="navbar sticky bg-pink-100">
+
+    <div className="navbar sticky bg-pink-800">
+
       <div className="flex-1">
          
         <div
           className="btn btn-ghost normal-case text-xl"
           onClick={() => navigate("/")}
         >
+
           
           <img
             className="mx-auto h-10 w-auto"
             src="C:\Users\deshm\OneDrive\Pictures\Screenshots\Abhiyantrika.png"
             
+
           />
           Abhiyantrika
         </div>
