@@ -1,9 +1,24 @@
-import DashboardPage from "./dashboard/page";
+"use client";
+import { useRouter } from "next/navigation";
+import React from "react";
 
-export default function UniversityPage() {
+const University = () => {
+  const router = useRouter();
+
+  const navigate = (name) => {
+    router.push("/university/features" + name);
+  };
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between ">
-      <DashboardPage />
-    </main>
+    <>
+      <h1>This is university login page</h1>
+      <button
+        className="btn btn-primary"
+        onClick={() => navigate("/dashboard")}
+      >
+        Primary
+      </button>
+    </>
   );
-}
+};
+
+export default University;
