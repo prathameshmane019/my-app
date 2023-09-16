@@ -1,12 +1,43 @@
 "use client";
+import { useState } from "react";
 import { useRouter } from "next/navigation";
 import React from "react";
 
 const Ministry = () => {
   const router = useRouter();
 
-  const navigate = (name) => {
-    router.push("/ministry/features" + name);
+  // const navigate = (name) => {
+  //   router.push("/ministry/features" + name);
+  // };
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log(username,password);
+    if (!username || !password) {
+      alert("Title and description are required.");
+      return;
+    }
+
+    try {
+      const res = await fetch("http://localhost:3000/api/ministry", {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify({ username, password }),
+      });
+
+      if (res.ok) {
+        router.push("ministry/features/dashboard");
+      } else {
+        throw new Error("Failed to create a user");
+      }
+    } catch (error) {
+      console.log(error);
+    }
   };
   return (
     <>
@@ -24,13 +55,15 @@ const Ministry = () => {
         </div>
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-          <form className="space-y-6" action="#" method="POST">
+          <form className="space-y-6" action="#" method="POST" onSubmit={handleSubmit}>
             <div>
               <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
                 Email address
               </label>
               <div className="mt-2">
                 <input
+                 onChange={(e) => setUsername(e.target.value)}
+                 value={username}
                   id="email"
                   name="email"
                   type="email"
@@ -54,6 +87,8 @@ const Ministry = () => {
               </div>
               <div className="mt-2">
                 <input
+                 onChange={(e) => setPassword(e.target.value)}
+                 value={password}
                   id="password"
                   name="password"
                   type="password"
@@ -69,7 +104,7 @@ const Ministry = () => {
         className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
         
 
-        onClick={() => navigate("/dashboard")}
+        // onClick={() => navigate("/dashboard")}
       >
         Login
       </button>
