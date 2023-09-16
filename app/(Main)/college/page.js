@@ -9,9 +9,9 @@ import React from "react";
 const College = () => {
   const router = useRouter();
 
-  // const navigate = (name) => {
-  //   router.push("/college/features" + name);
-  // };
+  const navigate = (name) => {
+    router.push("/college/features" + name);
+  };
 
 
   
