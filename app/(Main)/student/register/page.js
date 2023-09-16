@@ -17,9 +17,9 @@ const Student = () => {
 
   return (
     <>
+    <div class="shadow-inner ..."></div>
 
-    
-   <form className="w-full max-w-5xl ml-20 my-14">
+<form className="w-full max-w-5xl ml-20 my-14">
     <div className="flex flex-wrap -mx-3 mb-6">
     <div className="w-full md:w-1/2 px-3">
 <div className="form-control w-full max-w-xs">
@@ -62,7 +62,7 @@ const Student = () => {
   
 </div>
 </div>
-<div className="w-full md:w-1/2 px-3">
+<div className="w-full md:w-1/2 px-3 mt-2">
 <select className="select select-primary w-full max-w-xs">
   <option disabled selected>States</option>
   
@@ -96,14 +96,16 @@ const Student = () => {
   <option value="Uttarakhand">Uttarakhand</option>
   <option value="West Bengal">West Bengal</option>
 </select>
-<select className="select select-primary w-full max-w-xs">
+<select className="select select-primary w-full max-w-xs mt-3">
   <option disabled selected> select University</option>
 
   <option>Kolhapur University</option>
   <option>Solapur University</option>
 </select>
-<select className="select select-primary w-full max-w-xs">
-  <option disabled selected> select University</option>
+</div>
+<div className="w-full md:w-1/2 px-3 mt-2">
+<select className="select select-primary w-full max-w-xs mt-3">
+  <option disabled selected> select College</option>
 
   <option>Walchand Institute of Technology - [WIT], Solapur</option>
   <option>Brahmdevdada Mane Institute of Technology - [BMIT], Solapur</option>
@@ -111,7 +113,7 @@ const Student = () => {
 
 </select>
 
-<select className="select select-primary w-full max-w-xs">
+<select className="select select-primary w-full max-w-xs mt-3">
   <option disabled selected>Academic year</option>
   <option>First year</option>
   <option>Second year</option>
@@ -119,54 +121,36 @@ const Student = () => {
   <option>final year</option>
 </select>
 
-  
-
-
-
-  
 </div>
-
+<div className="w-full md:w-1/2 px-3 mt-2">
 <div className="form-control">
   <label className="label cursor-pointer">
     <span className="label-text">Male</span> 
     <input type="radio" name="radio-10" className="radio checked:bg-red-500" checked />
   </label>
 </div>
+
 <div className="form-control">
   <label className="label cursor-pointer">
     <span className="label-text">Female</span> 
     <input type="radio" name="radio-10" className="radio checked:bg-blue-500" checked />
   </label>
 </div>
-</div>
-<select className="select select-primary w-full max-w-xs">
-  <option disabled selected>Academic year</option>
-  <option>Computer science eng.</option>
-  <option>Electronic and telecommunication eng.</option>
-  <option>Civil eng</option>
-  <option>Mechanical eng.</option>
-  <option>Electrical eng.</option>
-</select>
 
 
+            <button
+        className="... ring-2 ring-blue-500/[.55]flex w-full justify-center rounded-md bg-indigo-600 px-2 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+        
 
-<div className="dropdown dropdown-bottom">
-  
-
-
-
-      <button
-        className="btn btn-primary"
-        onClick={() => navigate("features/dashboard")}
+        onClick={() => navigate("/dashboard")}
       >
         Login
       </button>
-
-      <button className="btn btn-primary" onClick={() => navigate("/")}>
-        Register
-      </button>
+      
+      </div>
       </div>
       </form>
+    
     </>
   );
 };

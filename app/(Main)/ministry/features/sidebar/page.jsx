@@ -7,19 +7,19 @@ export default function MinistrySideBar() {
   };
   return (
     <div className="top-12 flex flex-col gap-2 p-2 border rounded-xl">
-      <p className="text-xs font-medium text-gray-400">MAIN</p>
+      <p className="text-xs font-medium text-black-400 ">MAIN</p>
 
       <div
-        className="mt-4 py-1.5 text-sm font-medium text-slate-500 hover:text-blue-500 group cursor-pointer flex items-center"
-        onClick={() => navigate("features/dashboard")}
+        className="mt-4 py-1.5 text-sm font-medium text-slate-500 hover:text-black-500 group cursor-pointer flex items-center"
+        onClick={() => navigate("/dashboard")}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-5 stroke-slate-400 mr-4 group-hover:stroke-blue-500"
+          className="h-8 stroke-slate-400 mr-6 group-hover:stroke-blue-700"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
-          strokeWidth="2"
+          strokeWidth="4"
         >
           <path
             strokeLinecap="round"
@@ -32,7 +32,7 @@ export default function MinistrySideBar() {
 
       <div
         className="mt-4 py-1.5 text-sm font-medium text-slate-500 hover:text-blue-500 group cursor-pointer flex items-center"
-        onClick={() => navigate("features/projects")}
+        onClick={() => navigate("/projects")}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +53,7 @@ export default function MinistrySideBar() {
 
       <div
         className="mt-4 py-1.5 text-sm font-medium text-slate-500 hover:text-blue-500 group cursor-pointer flex items-center"
-        onClick={() => navigate("features/adduniversity")}
+        onClick={() => navigate("/adduniversity")}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
