@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 export default function MinistrySideBar() {
   const router = useRouter();
   const navigate = (name) => {
-    router.push("/ministry/" + name);
+    router.push("/ministry/features" + name);
   };
   return (
     <div className="top-12 flex flex-col gap-2 p-2 border rounded-xl">
@@ -11,7 +11,7 @@ export default function MinistrySideBar() {
 
       <div
         className="mt-4 py-1.5 text-sm font-medium text-slate-500 hover:text-black-500 group cursor-pointer flex items-center"
-        onClick={() => navigate("features/dashboard")}
+        onClick={() => navigate("/dashboard")}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +32,7 @@ export default function MinistrySideBar() {
 
       <div
         className="mt-4 py-1.5 text-sm font-medium text-slate-500 hover:text-blue-500 group cursor-pointer flex items-center"
-        onClick={() => navigate("features/projects")}
+        onClick={() => navigate("/projects")}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +53,7 @@ export default function MinistrySideBar() {
 
       <div
         className="mt-4 py-1.5 text-sm font-medium text-slate-500 hover:text-blue-500 group cursor-pointer flex items-center"
-        onClick={() => navigate("features/adduniversity")}
+        onClick={() => navigate("/adduniversity")}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
