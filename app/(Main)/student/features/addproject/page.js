@@ -3,7 +3,7 @@ import React from "react";
 const AddProject = () => {
   return (
     <>
-      <form className="w-full max-w-5xl ml-20 my-14">
+      <form className="w-full max-w-5xl ">
         <div className="flex flex-wrap -mx-3 mb-6">
           <div className="w-full md:w-1/2 px-3">
             <label

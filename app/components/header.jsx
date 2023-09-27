@@ -12,12 +12,12 @@ const Header = () => {
   };
   return (
 
-    <div className="navbar sticky bg-pink-800">
+    <div className="bg-gradient-to-r from-indigo-500 to-purple-500  navbar shadow-xl sticky top-0 ">
 
       <div className="flex-1">
          
         <div
-          className="btn btn-ghost normal-case text-xl"
+          className="text-slate-200 btn btn-ghost normal-case text-xl"
           onClick={() => navigate("/")}
         >
 
@@ -28,11 +28,11 @@ const Header = () => {
             
 
           />
-          Abhiyantrika
+          EduNexus
         </div>
       </div>
       <div className="flex-none">
-        <div className="" onClick={() => navigate("/about")}>
+        <div className="cursor-pointer text-slate-200" onClick={() => navigate("/about")}>
           About
         </div>
         <div className="dropdown dropdown-end mx-3">

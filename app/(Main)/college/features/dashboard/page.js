@@ -3,7 +3,7 @@ export default function DashboardPage() {
   return (
     <>
       <h1>General Stats</h1>
-      <div className="stats shadow mb-8 mt-7 mx-16 py-6">
+      <div className="stats shadow mm m-25  w-fit">
         <div className="stat place-items-center">
           <div className="stat-title">Number of Students Enrolled</div>
           <div className="stat-value">50000</div>

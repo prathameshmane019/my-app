@@ -2,9 +2,9 @@ import MinistrySideBar from "./sidebar/page";
 
 export default function MainLayout({ children }) {
   return (
-    <div className="flex flex-row">
-      <MinistrySideBar />
-      <div className="mx-3 my-3 content">{children}</div>
+    <div className="flex   ">
+    <MinistrySideBar  />
+    <div className=" content w-[85vw] ml-[18vw] mr-8">{children}</div>
     </div>
   );
 }

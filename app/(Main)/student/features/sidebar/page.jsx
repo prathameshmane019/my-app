@@ -6,8 +6,9 @@ export default function StudentSideBar() {
     router.push("/student/features" + name);
   };
   return (
-    <div className="top-12 flex flex-col gap-2 p-2 border rounded-xl">
-      <p className="text-xs font-medium text-gray-400">MAIN</p>
+    <div className=" bg-transparent fixed left-2 shadow-lg shadow-indigo-500/40  w-[15vw] mt-[2vh] h-[87vh] flex flex-col gap-2 p-2 border rounded-xl">
+    <div className="ml-6">
+       <p className="text-xs font-medium text-gray-400">MAIN</p>
 
       <div
         className="mt-4 py-1.5 text-sm font-medium text-slate-500 hover:text-blue-500 group cursor-pointer flex items-center"
@@ -49,6 +50,7 @@ export default function StudentSideBar() {
           />
         </svg>
         Add Project
+      </div>
       </div>
     </div>
   );
