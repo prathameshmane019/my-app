@@ -1,8 +1,21 @@
 "use client";
 import "./dashboard.css";
+import Image from "next/image";
 export default function DashboardPage() {
   return (
     <>
+    <div className="flex mt-28 ">
+      <div className="flex h-[150px] w-[300px] text-center    shadow-xl border rounded-xl ">
+        <div className="./src/assets/img/student.png ">
+        <a  href="https://icons8.com/icon/CAQ8ZCa4Ymaj/student">Student</a> icon by <a href="https://icons8.com">Icons8</a>
+          <div>
+          
+        </div>
+        <div className="mt-3">Number of Students Enrolled</div>
+        <div>50000</div>
+      </div>
+    </div>
+    </div>
       <h1>General Stats</h1>
       <div className="stats shadow py-6">
         <div className="stat place-items-center">
