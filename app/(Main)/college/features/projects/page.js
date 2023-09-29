@@ -116,16 +116,16 @@ const Projects = () => {
                   <div className="mask mask-squircle w-12 h-12"></div>
                 </div>
                 <div>
-                  <div className="font-bold">Library Management</div>
+                  <div className="font-bold"> Resume Parsing Application</div>
                   <div className="text-sm opacity-50">Active</div>
                 </div>
               </div>
             </td>
             <td>
-              PHP, CSS, Blade, Javascript
+              OCR Technology
               <br />
               <span className="badge badge-ghost badge-sm">
-                Web Development
+              Machine Learning
               </span>
             </td>
             <td>
@@ -133,7 +133,7 @@ const Projects = () => {
                 href="https://github.com/prabhakar267/library-management-system"
                 target="_blank"
               >
-                https://github.com/prabhakar267/library-management-system
+                https://github.com/prabhakar267/Resume-Parsing-application
               </a>
             </td>
             <th>
@@ -209,13 +209,13 @@ const Projects = () => {
                   <div className="mask mask-squircle w-12 h-12"></div>
                 </div>
                 <div>
-                  <div className="font-bold">Library Management</div>
+                  <div className="font-bold">Project Uploading website</div>
                   <div className="text-sm opacity-50">Active</div>
                 </div>
               </div>
             </td>
             <td>
-              PHP, CSS, Blade, Javascript
+              html, CSS, Next.js,Node
               <br />
               <span className="badge badge-ghost badge-sm">
                 Web Development
@@ -226,7 +226,7 @@ const Projects = () => {
                 href="https://github.com/prabhakar267/library-management-system"
                 target="_blank"
               >
-                https://github.com/prabhakar267/library-management-system
+                https://github.com/prabhakar267/Project-uploading-website
               </a>
             </td>
             <th>
@@ -302,16 +302,16 @@ const Projects = () => {
                   <div className="mask mask-squircle w-12 h-12"></div>
                 </div>
                 <div>
-                  <div className="font-bold">Library Management</div>
+                  <div className="font-bold">Fraud Detection </div>
                   <div className="text-sm opacity-50">Active</div>
                 </div>
               </div>
             </td>
             <td>
-              PHP, CSS, Blade, Javascript
+              Javascript, CSS, Blade,Machine Learning,Blockchain 
               <br />
               <span className="badge badge-ghost badge-sm">
-                Web Development
+                Blockchain
               </span>
             </td>
             <td>
